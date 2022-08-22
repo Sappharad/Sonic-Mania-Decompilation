@@ -10365,11 +10365,13 @@
 					"RETRO_REVISION=2",
 					"DEBUG=1",
 					"$(inherited)",
+					"RSDK_AUTOBUILD=1",
 				);
 				HEADER_SEARCH_PATHS = (
 					"\"$(PROJECT_DIR)/SonicMania/Objects/\"",
 					"\"$(PROJECT_DIR)/SonicMania/\"",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = Game;
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -10383,11 +10385,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = "";
-				GCC_PREPROCESSOR_DEFINITIONS = "RETRO_REVISION=2 ";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"RETRO_REVISION=2",
+					"RETRO_USE_MOD_LOADER=0",
+					"RSDK_AUTOBUILD=1",
+				);
 				HEADER_SEARCH_PATHS = (
 					"\"$(PROJECT_DIR)/SonicMania/Objects/\"",
 					"\"$(PROJECT_DIR)/SonicMania/\"",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = Game;
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -10413,6 +10420,7 @@
 					"\"$(PROJECT_DIR)/SonicMania/Objects/\"",
 					"\"$(PROJECT_DIR)/SonicMania/\"",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -10434,6 +10442,7 @@
 					"\"$(PROJECT_DIR)/SonicMania/Objects/\"",
 					"\"$(PROJECT_DIR)/SonicMania/\"",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -10457,6 +10466,7 @@
 					"\"$(PROJECT_DIR)/SonicMania/Objects/\"",
 					"\"$(PROJECT_DIR)/SonicMania/\"",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -10478,6 +10488,7 @@
 					"\"$(PROJECT_DIR)/SonicMania/Objects/\"",
 					"\"$(PROJECT_DIR)/SonicMania/\"",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "";
