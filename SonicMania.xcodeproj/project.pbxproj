@@ -6,7 +6,35 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		9E3BADBA28BAD51D0052E1D4 /* SonicManiaPlus */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9E3BADBB28BAD51D0052E1D4 /* Build configuration list for PBXAggregateTarget "SonicManiaPlus" */;
+			buildPhases = (
+			);
+			dependencies = (
+				9E3BADBF28BAD5250052E1D4 /* PBXTargetDependency */,
+				9E3BADC128BAD5290052E1D4 /* PBXTargetDependency */,
+			);
+			name = SonicManiaPlus;
+			productName = SonicManiaApp;
+		};
+		9E3BADC228BAD6210052E1D4 /* SonicMania_NoDLC */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9E3BADC728BAD6210052E1D4 /* Build configuration list for PBXAggregateTarget "SonicMania_NoDLC" */;
+			buildPhases = (
+			);
+			dependencies = (
+				9E3BADC328BAD6210052E1D4 /* PBXTargetDependency */,
+				9E3BAE1A28BAD7960052E1D4 /* PBXTargetDependency */,
+			);
+			name = SonicMania_NoDLC;
+			productName = SonicManiaApp;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		9E3BADB928BAD4C60052E1D4 /* Game.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = C96881E825DF3C5800BEE4B8 /* Game.dylib */; };
 		C9CDC8092850C85C00E4C97E /* GameLink.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CDC8042850C85B00E4C97E /* GameLink.h */; };
 		C9CDC80A2850C85C00E4C97E /* Game.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CDC8052850C85B00E4C97E /* Game.h */; };
 		C9CDC80B2850C85C00E4C97E /* Game.c in Sources */ = {isa = PBXBuildFile; fileRef = C9CDC8062850C85B00E4C97E /* Game.c */; };
@@ -3678,9 +3706,67 @@
 		C9CDDBE028A3BEAE00E4C97E /* Bungee.c in Sources */ = {isa = PBXBuildFile; fileRef = C9CDD1B62850D06000E4C97E /* Bungee.c */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9E3BADB228BAD3C50052E1D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E3BADAE28BAD3C50052E1D4 /* RSDKv5.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C96881F125DF3C8700BEE4B8;
+			remoteInfo = RSDKv5;
+		};
+		9E3BADBE28BAD5250052E1D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C968819F25DF3BC700BEE4B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C96881E725DF3C5800BEE4B8;
+			remoteInfo = SonicMania;
+		};
+		9E3BADC028BAD5290052E1D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E3BADAE28BAD3C50052E1D4 /* RSDKv5.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C96881F025DF3C8700BEE4B8;
+			remoteInfo = RSDKv5;
+		};
+		9E3BADC428BAD6210052E1D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C968819F25DF3BC700BEE4B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C96881E725DF3C5800BEE4B8;
+			remoteInfo = SonicMania;
+		};
+		9E3BAE1728BAD7920052E1D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E3BADAE28BAD3C50052E1D4 /* RSDKv5.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9E3BAE1428BAD65D0052E1D4;
+			remoteInfo = RSDKv5_Autobuild;
+		};
+		9E3BAE1928BAD7960052E1D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E3BADAE28BAD3C50052E1D4 /* RSDKv5.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E3BADCA28BAD65D0052E1D4;
+			remoteInfo = RSDKv5_Autobuild;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9E3BADB428BAD4450052E1D4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PROJECT_DIR)/dependencies/RSDKv5/dependencies/mac";
+			dstSubfolderSpec = 0;
+			files = (
+				9E3BADB928BAD4C60052E1D4 /* Game.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9E3BADAE28BAD3C50052E1D4 /* RSDKv5.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RSDKv5.xcodeproj; path = dependencies/RSDKv5/RSDKv5.xcodeproj; sourceTree = "<group>"; };
 		C96881E825DF3C5800BEE4B8 /* Game.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Game.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		C968886425DF3EF300BEE4B8 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = dependencies/mac/SDL2.framework; sourceTree = "<group>"; };
 		C9CDC8042850C85B00E4C97E /* GameLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameLink.h; path = SonicMania/GameLink.h; sourceTree = "<group>"; };
 		C9CDC8052850C85B00E4C97E /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = SonicMania/Game.h; sourceTree = "<group>"; };
 		C9CDC8062850C85B00E4C97E /* Game.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Game.c; path = SonicMania/Game.c; sourceTree = "<group>"; };
@@ -4933,6 +5019,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E3BADAF28BAD3C50052E1D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E3BADB328BAD3C50052E1D4 /* RSDKv5.app */,
+				9E3BAE1828BAD7920052E1D4 /* RSDKv5_Autobuild.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C928353E26AF9B7700D51CCE /* Unused */ = {
 			isa = PBXGroup;
 			children = (
@@ -5970,6 +6065,7 @@
 		C968819E25DF3BC700BEE4B8 = {
 			isa = PBXGroup;
 			children = (
+				9E3BADAE28BAD3C50052E1D4 /* RSDKv5.xcodeproj */,
 				C96888AB25DF4DE700BEE4B8 /* Game */,
 				C96881A825DF3BC700BEE4B8 /* Products */,
 				C968886325DF3EF200BEE4B8 /* Frameworks */,
@@ -5989,7 +6085,6 @@
 		C968886325DF3EF200BEE4B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C968886425DF3EF300BEE4B8 /* SDL2.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -8311,6 +8406,7 @@
 				C96881E425DF3C5800BEE4B8 /* Headers */,
 				C96881E525DF3C5800BEE4B8 /* Sources */,
 				C96881E625DF3C5800BEE4B8 /* Frameworks */,
+				9E3BADB428BAD4450052E1D4 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -8363,6 +8459,9 @@
 			attributes = {
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					9E3BADBA28BAD51D0052E1D4 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 					C96881E725DF3C5800BEE4B8 = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -8379,14 +8478,39 @@
 			mainGroup = C968819E25DF3BC700BEE4B8;
 			productRefGroup = C96881A825DF3BC700BEE4B8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9E3BADAF28BAD3C50052E1D4 /* Products */;
+					ProjectRef = 9E3BADAE28BAD3C50052E1D4 /* RSDKv5.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C96881E725DF3C5800BEE4B8 /* SonicMania */,
 				C9CDD24428A3BE8B00E4C97E /* SonicMania_v5U */,
 				C9CDD71728A3BEAE00E4C97E /* SonicMania_PrePlus */,
+				9E3BADBA28BAD51D0052E1D4 /* SonicManiaPlus */,
+				9E3BADC228BAD6210052E1D4 /* SonicMania_NoDLC */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9E3BADB328BAD3C50052E1D4 /* RSDKv5.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = RSDKv5.app;
+			remoteRef = 9E3BADB228BAD3C50052E1D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9E3BAE1828BAD7920052E1D4 /* RSDKv5_Autobuild.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = RSDKv5_Autobuild.app;
+			remoteRef = 9E3BAE1728BAD7920052E1D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C96881E525DF3C5800BEE4B8 /* Sources */ = {
@@ -10242,7 +10366,62 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9E3BADBF28BAD5250052E1D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C96881E725DF3C5800BEE4B8 /* SonicMania */;
+			targetProxy = 9E3BADBE28BAD5250052E1D4 /* PBXContainerItemProxy */;
+		};
+		9E3BADC128BAD5290052E1D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSDKv5;
+			targetProxy = 9E3BADC028BAD5290052E1D4 /* PBXContainerItemProxy */;
+		};
+		9E3BADC328BAD6210052E1D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C96881E725DF3C5800BEE4B8 /* SonicMania */;
+			targetProxy = 9E3BADC428BAD6210052E1D4 /* PBXContainerItemProxy */;
+		};
+		9E3BAE1A28BAD7960052E1D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSDKv5_Autobuild;
+			targetProxy = 9E3BAE1928BAD7960052E1D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		9E3BADBC28BAD51D0052E1D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9E3BADBD28BAD51D0052E1D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9E3BADC828BAD6210052E1D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9E3BADC928BAD6210052E1D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		C96881CF25DF3BCB00BEE4B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -10362,10 +10541,9 @@
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"RETRO_REVISION=2",
-					"DEBUG=1",
 					"$(inherited)",
-					"RSDK_AUTOBUILD=1",
+					"RETRO_REVISION=2",
+					"RETRO_USE_MOD_LOADER=0",
 				);
 				HEADER_SEARCH_PATHS = (
 					"\"$(PROJECT_DIR)/SonicMania/Objects/\"",
@@ -10388,7 +10566,6 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"RETRO_REVISION=2",
 					"RETRO_USE_MOD_LOADER=0",
-					"RSDK_AUTOBUILD=1",
 				);
 				HEADER_SEARCH_PATHS = (
 					"\"$(PROJECT_DIR)/SonicMania/Objects/\"",
@@ -10498,6 +10675,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9E3BADBB28BAD51D0052E1D4 /* Build configuration list for PBXAggregateTarget "SonicManiaPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E3BADBC28BAD51D0052E1D4 /* Debug */,
+				9E3BADBD28BAD51D0052E1D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E3BADC728BAD6210052E1D4 /* Build configuration list for PBXAggregateTarget "SonicMania_NoDLC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E3BADC828BAD6210052E1D4 /* Debug */,
+				9E3BADC928BAD6210052E1D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C96881A225DF3BC700BEE4B8 /* Build configuration list for PBXProject "SonicMania" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
